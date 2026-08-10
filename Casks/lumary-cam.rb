@@ -13,9 +13,7 @@ cask "lumary-cam" do
   end
 
   auto_updates true
-  # Comparator on purpose (brew style prefers the bare symbol): the app needs
-  # macOS 26 or NEWER; an exact-version match would block future macOS.
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "LumaryCam.app"
 
