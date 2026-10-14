@@ -1,6 +1,6 @@
 cask "lumary-audio" do
-  version "1.1.0"
-  sha256 "a4e884685ff9979f7edcc7f35fbb32050abf99259bd01f7126d8da8669adc8d2"
+  version "1.1.1"
+  sha256 "5cda65031a0d6681860530e37a3ee37fce26dd6762e41e03f8b77b02a393a675"
 
   url "https://github.com/LumaryLabsLLC/lumaryaudio-releases/releases/download/v#{version}/LumaryAudio-#{version}.dmg"
   name "Lumary Audio"
