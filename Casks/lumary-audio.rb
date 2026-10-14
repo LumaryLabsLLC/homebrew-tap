@@ -16,17 +16,20 @@ cask "lumary-audio" do
 
   app "LumaryAudio.app"
 
-  uninstall quit:    "com.lumarylabs.lumaryaudio",
-            pkgutil: "com.lumarylabs.lumaryaudio.driver",
-            delete:  "/Library/Audio/Plug-Ins/HAL/LumaryAudio.driver"
+  uninstall quit: "com.lumarylabs.lumaryaudio"
 
-  zap trash: [
-    "~/Library/Application Scripts/com.lumarylabs.lumaryaudio",
-    "~/Library/Containers/com.lumarylabs.lumaryaudio",
-  ]
+  # The virtual mic's driver is installed from inside the app, not by this cask, so
+  # upgrades (which run uninstall) must leave it; zap removes it.
+  zap pkgutil: "com.lumarylabs.lumaryaudio.driver",
+      delete:  "/Library/Audio/Plug-Ins/HAL/LumaryAudio.driver",
+      trash:   [
+        "~/Library/Application Scripts/com.lumarylabs.lumaryaudio",
+        "~/Library/Containers/com.lumarylabs.lumaryaudio",
+      ]
 
   caveats <<~EOS
     To use Lumary Audio as a microphone in other apps, press INSTALL next to
     V-MIC on the Live screen once. macOS asks for your administrator password.
+    brew uninstall --zap lumary-audio also removes the virtual mic.
   EOS
 end
