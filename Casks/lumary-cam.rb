@@ -1,6 +1,6 @@
 cask "lumary-cam" do
-  version "1.2.0"
-  sha256 "43e47e063624686555301d0fa61921f1768df01b560d2e4205407399a46f0152"
+  version "1.2.1"
+  sha256 "5631515fb6d942e1d5ad9357f469955de3966fea4d46746686b1ff54d1c3a29c"
 
   url "https://github.com/LumaryLabsLLC/lumarycam-releases/releases/download/v#{version}/LumaryCam-#{version}.dmg"
   name "Lumary Cam"
