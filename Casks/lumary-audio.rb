@@ -1,6 +1,6 @@
 cask "lumary-audio" do
-  version "1.3.0"
-  sha256 "c5f28afef81ab3eb7b7604e8afa319705dc8a160433d5e22a189f4c9b63d5db8"
+  version "1.4.0"
+  sha256 "c244a4f5e4e3c924a4fb85db6cf1490e1b3c68ce1dafd1050b2c23571c950017"
 
   url "https://github.com/LumaryLabsLLC/lumaryaudio-releases/releases/download/v#{version}/LumaryAudio-#{version}.dmg"
   name "Lumary Audio"
@@ -12,6 +12,8 @@ cask "lumary-audio" do
     strategy :github_latest
   end
 
+  # The app updates itself (Sparkle).
+  auto_updates true
   depends_on macos: :tahoe
 
   app "LumaryAudio.app"
