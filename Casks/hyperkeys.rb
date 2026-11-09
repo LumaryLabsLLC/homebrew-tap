@@ -1,6 +1,6 @@
 cask "hyperkeys" do
-  version "2.3"
-  sha256 "c20e3cddd34439ac200abeee039f2b8ceb48e84d7f2b4204fd196495b0b1c8f0"
+  version "2.4"
+  sha256 "1b275e67e5d0c54a76bb78ea7ede5520b9b8a474cc9aad8a27b94c7f66be1b66"
 
   url "https://github.com/LumaryLabsLLC/hyperkeysapp/releases/download/v#{version}/HyperKeys.zip"
   name "HyperKeys"
