@@ -1,11 +1,11 @@
 cask "muxin" do
   arch arm: "aarch64", intel: "x86_64"
 
-  version "0.16.0"
-  sha256 arm:          "1daae4a19a8c8c3e30e32e2c4e3b3972e8c4dfb7529f68e128310a4c9a259789",
-         intel:        "1daae4a19a8c8c3e30e32e2c4e3b3972e8c4dfb7529f68e128310a4c9a259789",
-         arm64_linux:  "ea5f71a1e0dc20f4283b37b5e6ff574bdd5f5fd749b2e059ddcd65e9bc21993a",
-         x86_64_linux: "066d393af9ba82f7cd8ce45395c2b7b0186ee4e3e91749bd9d4eae06fcec4996"
+  version "0.17.0"
+  sha256 arm:          "04834491596c9b22e000a9aa22c4109190bdc09ec1658dd35b90d337800e108b",
+         intel:        "04834491596c9b22e000a9aa22c4109190bdc09ec1658dd35b90d337800e108b",
+         arm64_linux:  "3c357c84a88c661300d49c7b6b0b7c3b8b141fa964d80bb627c6f61565541613",
+         x86_64_linux: "f3d1e7056f54f06507059996cdcd16b4145705811ff89041b8fa835d065e83b4"
 
   on_macos do
     url "https://github.com/LumaryLabsLLC/muxin/releases/download/v#{version}/Muxin-#{version}-macos.dmg"
